@@ -190,20 +190,7 @@ img {
     }
 }
 
-.cta-nav {
-    display: none;
-    margin-left: 6.3rem;
-    margin-top: 1rem;
-}
 
-@media (min-width: 1024px) {
-.cta-nav {
-    display: none;
-    margin-left: 6.3rem;
-    margin-top: 1rem;
-}
-
-}
 
 .nav-links a {
     color: var(--preto-suave);
@@ -235,7 +222,10 @@ img {
     font-size: 0.9rem;
     transition: var(--transicao-padrao);
     white-space: nowrap;
-    display: inline-block;
+    display: block;
+    text-align: center;
+
+
 }
 
 .cta-nav:hover {
@@ -248,6 +238,9 @@ img {
     .cta-nav {
         padding: 0.9rem 2.2rem;
         font-size: 1rem;
+        margin-left: 80rem;
+        display: inline-block;
+
     }
 }
 
