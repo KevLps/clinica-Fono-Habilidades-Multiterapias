@@ -1,5 +1,5 @@
 /* =============================================
-   VARIÁVEIS CSS - PALETA DE CORES OBRIGATÓRIA
+   VARIÁVEIS CSS - PALETA DE CORES DE ACORDO COS AS CORES DA CLINICA
    ============================================= */
 :root {
     --branco: #FFFFFF;
@@ -21,7 +21,7 @@
 }
 
 /* =============================================
-   RESET E BASE
+   RESET DA BASE
    ============================================= */
 * {
     margin: 0;
@@ -1260,11 +1260,27 @@ img {
     max-width: 450px;
     height: 350px;
     border-radius: var(--borda-arredondada-grande);
+    border: none;
+}
+
+.footer-logo .image-footer {
+    width: 78%;
+    height: 60%;
+    margin-left: 3em;
+}
+
+@media (min-width: 1024px) {
+    .footer-logo .image-footer {
+        width: 80%;
+        height: 60%;
+        margin-left: 6rem;
+    }
 }
 
 @media (min-width: 768px) {
     .contato-image .img-placeholder {
         height: 450px;
+        border: none;
     }
 }
 
@@ -1433,10 +1449,11 @@ img {
     width: 160px;
     height: 60px;
     min-height: auto;
-    border: 2px dashed rgba(255,255,255,0.5);
     color: var(--branco);
     background: rgba(255,255,255,0.15);
 }
+
+
 
 @media (min-width: 768px) {
     .footer-logo .img-placeholder {
