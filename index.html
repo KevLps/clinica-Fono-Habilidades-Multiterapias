@@ -1,563 +1,1573 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Clínica Fono Habilidades Multiterapias - Macapá/AP</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- HEADER E NAVEGAÇÃO FIXA -->
-    <header>
-        <nav>
-            <div class="logo-placeholder">
-                <img src="./image/LOGO FONO (PRINCIPAL).png" alt="LOGO-FONO-HABILIDADES-MULTITERAPIAS"; class="logo-image" loading="lazy">
-            </div>
-            
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#metodologias" class="nav-link">Métodos</a></li>
-                <li><a href="#salas" class="nav-link">Estrutura</a></li>
-                <li><a href="#terapias" class="nav-link">Terapias</a></li>
-                <li><a href="#equipe" class="nav-link">Equipe</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
+/* =============================================
+   VARIÁVEIS CSS - PALETA DE CORES OBRIGATÓRIA
+   ============================================= */
+:root {
+    --branco: #FFFFFF;
+    --bege-claro: #f9f3eb;
+    --marrom-terroso: #9d4a17;
+    --bege-areia: #d6b38d;
+    --marrom-suave: #ba8664;
+    --azul-petroleo: #097685;
+    --laranja-claro: #e88d4a;
+    --verde-claro: #eaf4ed;
+    --cinza-texto: #6b6560;
+    --preto-suave: #3e3a37;
+    --preto: #000000;
+    --sombra-suave: 0 15px 45px rgba(0,0,0,0.08);
+    --sombra-media: 0 20px 50px rgba(0,0,0,0.12);
+    --transicao-padrao: all 0.3s ease;
+    --borda-arredondada: 1rem;
+    --borda-arredondada-grande: 2rem;
+}
 
-            <a href="https://wa.me/5596981455949" class="cta-nav" target="_blank">AGENDE SUA CONSULTA</a> 
+/* =============================================
+   RESET E BASE
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero full-width">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="hero-welcome">Seu espaço de cuidado e desenvolvimento</span>
-                    <h1 class="hero-title">
-                        <span class="word-1">FONO</span> 
-                        <span class="word-2">HABILIDADES</span> 
-                        <span class="word-3">MULTI</span>
-                        <span class="word-4">TERAPIAS</span>
-                    </h1>
-                    <p class="hero-subtitle">estamos abertos para receber você!</p>
-                    <a href="https://wa.me/5596981455949" class="cta-hero" target="_blank">AGENDE SUA CONSULTA</a>
-                    <p style="font-size: 1.15rem; color: var(--cinza-texto); margin-top: 1rem;">
-                        Atendemos crianças, adolescentes e adultos. Particular e convênio <strong>CASSI</strong>.
-                    </p>
-                </div>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--preto-suave);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-                <div class="hero-images">
-                    <img src="./image/paciente-sorridente1.jpg" alt="Paciente sorridente 1" class="hero-img" data-placeholder="Foto Paciente 1" loading="lazy">
-                    <img src="./image/paciente-sorridente2.jpg" alt="Paciente sorridente 2" class="hero-img" data-placeholder="Foto Paciente 2" loading="lazy">
-                    <img src="./image/paciente-sorridente3.jpg" alt="Paciente sorridente 3" class="hero-img" data-placeholder="Foto Paciente 3" loading="lazy">
-                    
-                    <div class="hero-decor">⭐</div>
-                    <div class="hero-decor">💛</div>
-                    <div class="hero-decor">✨</div>
-                </div>
-            </div>
-        </div>
-    </section>
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-    <!-- METODOLOGIAS -->
-    <section id="metodologias" class="metodologias full-width">
-        <div class="container">
-            <h2 class="section-title">METODOLOGIAS</h2>
-            <div class="cards-grid">
-                <div class="card card-1">
-                    <h3>ABA</h3>
-                    <p>Análise do Comportamento Aplicada — Intervenção baseada em evidências para desenvolvimento de habilidades sociais, comunicativas e acadêmicas em crianças com TEA e outros transtornos do desenvolvimento.</p>
-                </div>
-                <div class="card card-2">
-                    <h3>Integração Sensorial</h3>
-                    <p>Abordagem que ajuda o cérebro a processar e organizar estímulos sensoriais do ambiente, promovendo melhor regulação emocional, atenção e coordenação motora.</p>
-                </div>
-                <div class="card card-3">
-                    <h3>Comunicação Alternativa (CAA)</h3>
-                    <p>Conjunto de estratégias para complementar ou substituir a fala em pessoas com dificuldades de comunicação, utilizando gestos, imagens, símbolos ou dispositivos eletrônicos.</p>
-                </div>
-                <div class="card card-4">
-                    <h3>Método TEACCH</h3>
-                    <p>Treatment and Education of Autistic and related Communication-handicapped Children. Estruturação do ambiente físico e visual para promover independência e organização.</p>
-                </div>
-                <div class="card card-5">
-                    <h3>Estimulação Precoce</h3>
-                    <p>Intervenção multidisciplinar nos primeiros anos de vida para potencializar o desenvolvimento neuropsicomotor, cognitivo e social de crianças com atrasos.</p>
-                </div>
-                <div class="card card-6">
-                    <h3>Psicomotricidade Relacional</h3>
-                    <p>Uso do movimento e do jogo espontâneo para promover desenvolvimento emocional e social através da relação terapêutica corpo-mente-ambiente.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* =============================================
+   CONTAINER CENTRALIZADO (1200px máx)
+   ============================================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
-    <!-- SALAS -->
-    <section id="salas" class="salas full-width">
-        <div class="container">
-            <h2 class="section-title" style="color: var(--preto);">AMBIENTES</h2>
-            <div class="salas-grid">
-                <div class="sala-card" style="--overlay: rgba(9,118,133,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Multissensorial"></div>
-                    <div class="sala-title">Sala Multissensorial</div>
-                </div>
-                <div class="sala-card" style="--overlay: rgba(157,74,23,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Psicomotricidade"></div>
-                    <div class="sala-title">Sala Psicomotricidade</div>
-                </div>
-                <div class="sala-card" style="--overlay: rgba(232,141,74,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Fonoaudiologia"></div>
-                    <div class="sala-title">Sala Fonoaudiologia</div>
-                </div>
-                <div class="sala-card" style="--overlay: rgba(214,179,141,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Terapia Ocupacional"></div>
-                    <div class="sala-title">Sala Terapia Ocupacional</div>
-                </div>
-                <div class="sala-card" style="--overlay: rgba(9,118,133,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Psicologia"></div>
-                    <div class="sala-title">Sala Psicologia</div>
-                </div>
-                <div class="sala-card" style="--overlay: rgba(157,74,23,0.75);">
-                    <div class="img-placeholder" data-placeholder="Foto Sala Musicoterapia"></div>
-                    <div class="sala-title">Sala Musicoterapia</div>
-                </div>
-            </div>
-        </div>
-    </section>
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
 
-    <!-- NOSSAS TERAPIAS -->
-    <section id="terapias" class="terapias full-width">
-        <div class="container">
-            <div class="terapias-grid">
-                <div class="terapias-title">
-                    <div class="title-stack">
-                        <span style="color: var(--branco);">NOSSAS</span>
-                        <span style="color: var(--laranja-claro);">TERAPIAS</span>
-                    </div>
-                </div>
-                <div class="terapia-card" style="color: var(--branco);">
-                    <h3>Fonoaudiologia</h3>
-                    <p>Diagnóstico e tratamento de distúrbios da comunicação, voz, fala e deglutição.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--laranja-claro);">
-                    <h3>Psicologia</h3>
-                    <p>Apoio ao bem-estar emocional e saúde mental para todas as idades.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--bege-areia);">
-                    <h3>Terapia Ocupacional</h3>
-                    <p>Desenvolvimento da autonomia em atividades cotidianas e integração sensorial.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--bege-claro);">
-                    <h3>Psicomotricidade</h3>
-                    <p>Integração entre corpo e mente através do movimento.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--marrom-suave);">
-                    <h3>Fisioterapia</h3>
-                    <p>Reabilitação e prevenção de disfunções motoras.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--branco);">
-                    <h3>Neuropsicologia</h3>
-                    <p>Avaliação e reabilitação de funções cognitivas como memória e atenção.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--laranja-claro);">
-                    <h3>Musicoterapia</h3>
-                    <p>Uso da música como ferramenta terapêutica para emoções e comunicação.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--bege-areia);">
-                    <h3>Psicopedagogia</h3>
-                    <p>Intervenção em dificuldades de aprendizagem e desenvolvimento acadêmico.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--bege-claro);">
-                    <h3>Nutrição</h3>
-                    <p>Orientação alimentar e acompanhamento em seletividade alimentar.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--marrom-suave);">
-                    <h3>Terapia Assistida por Animais</h3>
-                    <p>Bem-estar físico e emocional com animais treinados.</p>
-                </div>
-                <div class="terapia-card" style="color: var(--branco);">
-                    <h3>Oficinas Terapêuticas</h3>
-                    <p>Atividades práticas para habilidades sociais, expressivas e cognitivas.</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 4rem; padding: 2.5rem; background: rgba(255,255,255,0.15); border-radius: 1.5rem;">
-                <p style="font-size: 1.2rem; opacity: 0.95;">
-                    <strong>CASSI aceita!</strong> A CASSI (Caixa de Assistência dos Funcionários do Banco do Brasil) é um plano de saúde de autogestão, referência em atenção integral. 
-                    <br><strong>Em breve: FUSEx!</strong> Ampliarei ainda mais o acesso ao cuidado multidisciplinar para sua família.
-                </p>
-            </div>
-        </div>
-    </section>
+/* =============================================
+   SEÇÕES FULL WIDTH - SEM MARGENS LATERAIS
+   ============================================= */
+.full-width {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
 
-    <!-- NOSSA EQUIPE -->
-    <section id="equipe" class="equipe full-width">
-        <div class="container">
-            <div class="title-stack section-title">
-                <span class="first">NOSSA</span>
-                <span class="second">EQUIPE</span>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel-track" id="equipeTrack">
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dra. Ana Silva</h3>
-                        <p>Fonoaudióloga<br>CRFa-4 9876</p>
-                    </div>
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dr. João Mendes</h3>
-                        <p>Psicólogo<br>CRP-10 12345</p>
-                    </div>
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dra. Maria Oliveira</h3>
-                        <p>Terapeuta Ocupacional<br>CREFITO-2 5678</p>
-                    </div>
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dra. Carla Santos</h3>
-                        <p>Psicomotricista<br>CRP-10 9876</p>
-                    </div>
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dr. Pedro Lima</h3>
-                        <p>Fisioterapeuta<br>CREFITO-2 4321</p>
-                    </div>
-                    <div class="equipe-card">
-                        <div class="equipe-foto img-placeholder" data-placeholder="Foto Profissional"></div>
-                        <h3>Dra. Juliana Costa</h3>
-                        <p>Neuropsicóloga<br>CRP-10 5555</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+/* =============================================
+   PLACEHOLDER PARA IMAGENS
+   ============================================= */
+.img-placeholder {
+    background: linear-gradient(135deg, #e8e8e8 0%, #f0f0f0 100%);
+    border: 2px dashed var(--bege-areia);
+    border-radius: var(--borda-arredondada);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cinza-texto);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+    min-height: 200px;
+    transition: var(--transicao-padrao);
+}
 
-    <!-- DEPOIMENTOS -->
-    <section id="depoimentos" class="depoimentos full-width">
-        <div class="container">
-            <h2 class="section-title">DEPOIMENTOS</h2>
-            <div class="depoimentos-container">
-                <div class="depoimentos-track" id="depoimentosTrack">
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-texto">"Bom atendimento. Ótimos profissionais."</p>
-                        <div class="depoimento-autor" style="color: var(--azul-petroleo);">Ismenia Suzuki</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <div class="depoimento-autor" style="color: var(--laranja-claro);">
-                            Simone Tavares<br><small style="font-weight: 400; opacity: 0.8;">Local Guide</small>
-                        </div>
-                    </div>
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <div class="depoimento-autor" style="color: var(--marrom-terroso);">Alderlan Santana</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-texto">"A equipe é muito atenciosa. Meu filho adora as terapias e evoluiu muito!"</p>
-                        <div class="depoimento-autor" style="color: var(--marrom-suave);">Maria Clara Oliveira</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-texto">"Ambiente acolhedor e profissionais excelentes. Recomendo demais."</p>
-                        <div class="depoimento-autor" style="color: var(--azul-petroleo);">João Pedro Santos</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <div class="estrelas">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-texto">"Encontrei aqui o cuidado que minha família precisava. Gratidão!"</p>
-                        <div class="depoimento-autor" style="color: var(--laranja-claro);">Ana Beatriz Lima</div>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn" id="prevBtn">◀</button>
-                    <div class="dots" id="dotsContainer"></div>
-                    <button class="carousel-btn" id="nextBtn">▶</button>
-                </div>
-            </div>
-        </div>
-    </section>
+.img-placeholder:hover {
+    border-color: var(--azul-petroleo);
+    background: linear-gradient(135deg, #e0e0e0 0%, #e8e8e8 100%);
+}
 
-    <!-- FALE CONOSCO -->
-    <section id="contato" class="contato full-width">
-        <div class="container">
-            <div class="title-stack section-title">
-                <span class="first">FALE</span>
-                <span class="second">CONOSCO</span>
-            </div>
-            <div class="contato-grid">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label>Nome completo do responsável</label>
-                        <input type="text" required placeholder="Digite seu nome completo">
-                    </div>
-                    <div class="form-group">
-                        <label>E-mail</label>
-                        <input type="email" required placeholder="seu@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Telefone</label>
-                        <input type="tel" required placeholder="(96) 99999-9999">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensagem</label>
-                        <textarea rows="5" required placeholder="Conte-nos como podemos ajudar..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-enviar">ENVIAR MENSAGEM</button>
-                    <a href="https://wa.me/5596981455949" class="whatsapp-link" target="_blank">
-                        📱 Ou fale direto pelo WhatsApp
-                    </a>
-                </form>
-                <div>
-                    <img src="image/paciente-em-atendimento (2).jpg" alt="Paciente em atendimento" class="img-placeholder" data-placeholder="Foto Paciente" style="width: 100%; height: 420px; border-radius: 1.5rem;" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
+/* =============================================
+   NAVEGAÇÃO FIXA - 100% LARGURA
+   ============================================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-    <!-- RODAPÉ -->
-    <footer class="full-width">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-logo">
-                       <img class="image-footer" src="./image/LOGO FONO (PRINCIPAL).png" alt="logo-footer">
-                    </div>
-                </div>
-                <div>
-                    <h3>Localização</h3>
-                    <p><a href="https://maps.app.goo.gl/FGciaMA7wYKnL8dw8" target="_blank">📍 Avenida Dr. Acelino de Leão, Nº 738 - Trem<br>Macapá, AP</a></p>
-                    <p>📞 (96) 98145-5949</p>
-                </div>
-                <div>
-                    <h3>Redes Sociais</h3>
-                    <div class="social-icons">
-                        <a class="link-instagram" href="https://instagram.com/fonohabilidadesmcp" target="_blank"> <img src="./image/instagram-icon.png" alt="icone-instagram"></a>
-                        <a class="link-instagram" href="https://www.facebook.com/fonohabilidadesmcp/" target="_blank"> <img src="./image/facebook-icon.png" alt="icone-facebook"></a>
-                    </div>
-                    <h3 style="margin-top: 2rem;">Horários</h3>
-                    <p>Segunda a sexta - 8h às 20h<br>Sábado - 8h às 12h</p>
-                </div>
-            </div>
-            <div class="copyright">
-                © 2026 Clínica Fono Habilidades Multiterapias. Todos os direitos reservados.
-            </div>
-        </div>
-    </footer>
+.header.scrolled {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
 
-    <script>
-        // === NAVEGAÇÃO E SCROLL SUAVE ===
-        const header = document.querySelector('header');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.querySelector('.nav-links');
+/* Container do Nav - usa flexbox com espaço entre os itens */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
 
-        // Sombra no header ao scroll
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
+@media (min-width: 1024px) {
+    .nav {
+        padding: 1rem 2rem;
+        height: 80px;
+    }
+}
 
-        // Scroll suave para seções
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                mobileMenu.classList.remove('mobile');
-            });
-        });
+.logo-image {
+    width: auto;
+    height: 100%;
+}
 
-        // Menu hamburger mobile
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('mobile');
-        });
+.logo-placeholder {
+    height: 45px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cinza-texto);
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 2px var(--bege-areia);
+}
 
-        // === CARROSSEL EQUIPE AUTOMÁTICO ===
-        const equipeTrack = document.getElementById('equipeTrack');
-        const equipeCards = document.querySelectorAll('.equipe-card');
-        let equipeCurrent = 0;
+@media (min-width: 768px) {
+    .logo-placeholder {
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
 
-        function nextEquipe() {
-            equipeCurrent = (equipeCurrent + 1) % equipeCards.length;
-            const offset = -equipeCurrent * (340 + 30); // largura + gap
-            equipeTrack.style.transform = `translateX(${offset}px)`;
-        }
+/* =============================================
+   LINKS DE NAVEGAÇÃO 
+   ============================================= */
+.nav-links {
+    display: none;
+    text-align: center;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
-        setInterval(nextEquipe, 3000);
+@media (min-width: 1024px) {
+    .nav-links {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
-        // === CARROSSEL DEPOIMENTOS ===
-        const depoimentosTrack = document.getElementById('depoimentosTrack');
-        const depoimentoCards = document.querySelectorAll('.depoimento-card');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const dotsContainer = document.getElementById('dotsContainer');
-        
-        let depoimentoCurrent = 0;
+@media (min-width: 1024px) {
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
 
-        // Cria dots
-        depoimentoCards.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToDepoimento(index));
-            dotsContainer.appendChild(dot);
-        });
 
-        const dots = document.querySelectorAll('.dot');
 
-        function updateDepoimentos() {
-            const offset = -depoimentoCurrent * 100;
-            depoimentosTrack.style.transform = `translateX(${offset}%)`;
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === depoimentoCurrent);
-            });
-        }
+.nav-links a {
+    color: var(--preto-suave);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
 
-        function goToDepoimento(index) {
-            depoimentoCurrent = index;
-            updateDepoimentos();
-        }
+.nav-links a:hover {
+    color: var(--azul-petroleo);
+}
 
-        function nextDepoimento() {
-            depoimentoCurrent = (depoimentoCurrent + 1) % depoimentoCards.length;
-            updateDepoimentos();
-        }
 
-        function prevDepoimento() {
-            depoimentoCurrent = (depoimentoCurrent - 1 + depoimentoCards.length) % depoimentoCards.length;
-            updateDepoimentos();
-        }
+@media (min-width: 1024px) {
+    .nav-cta-container {
+        display: block;
+    }
+}
 
-        nextBtn.addEventListener('click', nextDepoimento);
-        prevBtn.addEventListener('click', prevDepoimento);
+.cta-nav {
+    background: var(--laranja-claro);
+    color: var(--branco) !important;
+    padding: 0.7rem 1.8rem;
+    border-radius: var(--borda-arredondada-grande);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transicao-padrao);
+    white-space: nowrap;
+    display: block;
+    text-align: center;
 
-        // Auto-advance depoimentos
-        setInterval(nextDepoimento, 5000);
 
-        // === FORMULÁRIO ===
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Simula envio
-            alert('✅ Mensagem enviada com sucesso! Em breve entraremos em contato.');
-            e.target.reset();
-        });
+}
 
-        // === EFEITOS FINAIS ===
-        // Smooth scroll para todos os links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+.cta-nav:hover {
+    background: #d6793a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(232, 141, 74, 0.3);
+}
 
-        // =============================================
-// MENU MOBILE FUNCTIONAL
-// =============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const navLinkItems = document.querySelectorAll('.nav-links a');
-    
-    // Toggle menu ao clicar no hamburger
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function(e) {
-            e.stopPropagation();
-            navLinks.classList.toggle('mobile-active');
-            hamburger.classList.toggle('active');
-            
-            // Previne scroll do body quando menu está aberto
-            if (navLinks.classList.contains('mobile-active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
+@media (min-width: 1024px) {
+    .cta-nav {
+        padding: 0.9rem 2.2rem;
+        font-size: 1rem;
+        margin-left: 80rem;
+        display: inline-block;
+
+    }
+}
+
+/* =============================================
+   MENU MOBILE - Mantém funcionalidade
+   ============================================= */
+@media (max-width: 1023px) {
+    .nav-links.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--branco);
+        padding: 1.5rem;
+        box-shadow: var(--sombra-media);
+        gap: 1.2rem;
+        z-index: 999;
+        animation: slideDown 0.3s ease;
+        transform: none; /* Remove o translateX do mobile */
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-links.mobile-active a {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.nav-links.mobile-active a:hover {
+    background: var(--bege-claro);
+}
+
+/* Hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    background: none;
+    border: none;
+    z-index: 1001;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2.5px;
+    background: var(--marrom-terroso);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero {
+    background: var(--bege-claro);
+    padding: 100px 0 60px;
+    min-height: auto;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 120px 0 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 140px 0 100px;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        text-align: left;
+        align-items: center;
+    }
+}
+
+/* Textos do Hero */
+.hero-text {
+    width: 100%;
+}
+
+.hero-welcome {
+    color: var(--laranja-claro);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .hero-welcome {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.hero-title {
+    margin-bottom: 0.8rem;
+}
+
+.hero-title h1 {
+    font-size: clamp(2.2rem, 8vw, 4rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.hero-title span {
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline;
+}
+
+.word-1 { color: var(--marrom-terroso); }
+.word-2 { color: var(--azul-petroleo); }
+.word-3 { color: var(--marrom-suave); }
+.word-4 { color: var(--laranja-claro); }
+
+.hero-subtitle {
+    color: var(--cinza-texto);
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.hero-cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-cta-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-cta-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+.cta-hero {
+    background: var(--azul-petroleo);
+    color: var(--branco);
+    padding: 1rem 2.5rem;
+    border-radius: var(--borda-arredondada-grande);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: var(--transicao-padrao);
+    box-shadow: 0 6px 20px rgba(9,118,133,0.3);
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cta-hero {
+        width: auto;
+        padding: 1.2rem 3rem;
+        font-size: 1.1rem;
+    }
+}
+
+.cta-hero:hover {
+    background: #07655f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(9,118,133,0.4);
+}
+
+.hero-info {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: var(--borda-arredondada);
+    font-size: 0.9rem;
+    color: var(--marrom-terroso);
+    font-weight: 500;
+}
+
+/* Imagens do Hero */
+.hero-images {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .hero-images {
+        height: 380px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-images {
+        height: 420px;
+        max-width: none;
+    }
+}
+
+.hero-img {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    aspect-ratio: 3/4;
+    border-radius: var(--borda-arredondada);
+    box-shadow: var(--sombra-media);
+    object-fit: cover;
+}
+
+.hero-img:nth-child(1) {
+    top: 0;
+    right: 5%;
+    width: 40%;
+}
+
+.hero-img:nth-child(2) {
+    top: 25%;
+    left: 0;
+    z-index: 2;
+    width: 48%;
+}
+
+.hero-img:nth-child(3) {
+    top: 50%;
+    right: 10%;
+    width: 42%;
+}
+
+.hero-img:nth-child(4) {
+    bottom: 0;
+    left: 15%;
+    width: 44%;
+}
+
+.hero-decor {
+    position: absolute;
+    font-size: 1.3rem;
+    opacity: 0.5;
+    animation: float 4s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@media (min-width: 768px) {
+    .hero-decor {
+        font-size: 1.6rem;
+    }
+}
+
+.hero-decor:nth-child(5) { top: 5%; left: 5%; animation-delay: 0s; }
+.hero-decor:nth-child(6) { bottom: 10%; right: 5%; animation-delay: 1.5s; }
+.hero-decor:nth-child(7) { top: 50%; left: 50%; animation-delay: 2.5s; transform: translate(-50%, -50%); }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+/* =============================================
+   TÍTULOS DE SEÇÃO - ALINHADOS À ESQUERDA
+   ============================================= */
+.section-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        margin-bottom: 3rem;
+    }
+}
+
+.title-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .title-stack {
+        font-size: 2rem;
+    }
+}
+
+.title-stack .first {
+    color: var(--preto-suave);
+}
+
+.title-stack .second {
+    color: var(--laranja-claro);
+}
+
+/* =============================================
+   SEÇÃO METODOLOGIAS
+   ============================================= */
+.metodologias {
+    background: var(--branco);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .metodologias {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .metodologias {
+        padding: 100px 0;
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.card {
+    padding: 1.8rem;
+    border-radius: var(--borda-arredondada);
+    box-shadow: var(--sombra-suave);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 2.2rem;
+    }
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-media);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.card p {
+    flex: 1;
+    opacity: 0.95;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Cores dos Cards */
+.card-1 { background: var(--marrom-terroso); color: var(--branco); }
+.card-2 { background: var(--azul-petroleo); color: var(--branco); }
+.card-3 { 
+    background: var(--branco); 
+    color: var(--marrom-terroso);
+    border: 2px solid var(--bege-areia);
+}
+.card-4 { 
+    background: var(--bege-areia); 
+    color: var(--preto-suave);
+}
+.card-5 { background: var(--laranja-claro); color: var(--branco); }
+.card-6 { background: var(--marrom-suave); color: var(--branco); }
+
+/* =============================================
+   SEÇÃO SALAS
+   ============================================= */
+.salas {
+    background: var(--branco);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .salas {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .salas {
+        padding: 100px 0;
+    }
+}
+
+.salas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .salas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .salas-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.sala-card {
+    position: relative;
+    height: 280px;
+    border-radius: var(--borda-arredondada-grande);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicao-padrao);
+}
+
+@media (min-width: 768px) {
+    .sala-card {
+        height: 320px;
+    }
+}
+
+.sala-card:hover {
+    box-shadow: var(--sombra-media);
+}
+
+.sala-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, var(--overlay, rgba(9,118,133,0.75)), transparent 60%);
+    z-index: 1;
+}
+
+.sala-card .img-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    border: none;
+    border-radius: var(--borda-arredondada-grande);
+    z-index: 0;
+}
+
+.sala-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: var(--branco);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .sala-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* =============================================
+   SEÇÃO TERAPIAS
+   ============================================= */
+.terapias {
+    background: var(--azul-petroleo);
+    color: var(--branco);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .terapias {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .terapias {
+        padding: 100px 0;
+    }
+}
+
+.terapias-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+@media (min-width: 600px) {
+    .terapias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .terapias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 1.8rem;
+    }
+}
+
+.terapias-title {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    padding-bottom: 0.5rem;
+}
+
+.terapia-card {
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.12);
+    border-radius: var(--borda-arredondada);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: var(--transicao-padrao);
+}
+
+@media (min-width: 768px) {
+    .terapia-card {
+        padding: 1.8rem;
+    }
+}
+
+.terapia-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-5px);
+}
+
+.terapia-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .terapia-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.terapia-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .terapia-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* =============================================
+   SEÇÃO EQUIPE - CARROSSEL
+   ============================================= */
+.equipe {
+    background: var(--branco);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .equipe {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .equipe {
+        padding: 100px 0;
+    }
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .carousel-container {
+        margin-top: 2rem;
+    }
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 0;
+}
+
+.equipe-card {
+    min-width: 280px;
+    max-width: 340px;
+    padding: 2rem 1.5rem;
+    background: var(--branco);
+    border-radius: var(--borda-arredondada);
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    margin: 0 0.8rem;
+    transition: var(--transicao-padrao);
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .equipe-card {
+        min-width: 320px;
+        padding: 2.5rem 2rem;
+        margin: 0 1.2rem;
+    }
+}
+
+.equipe-card:hover {
+    box-shadow: var(--sombra-media);
+}
+
+.equipe-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1.2rem;
+    border: 3px solid var(--bege-areia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--bege-claro);
+}
+
+@media (min-width: 768px) {
+    .equipe-foto {
+        width: 130px;
+        height: 130px;
+        border-width: 4px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.equipe-foto .img-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    min-height: auto;
+    border: none;
+}
+
+.equipe-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: var(--preto-suave);
+}
+
+@media (min-width: 768px) {
+    .equipe-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+.equipe-card .especialidade {
+    color: var(--azul-petroleo);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.equipe-card .registro {
+    color: var(--cinza-texto);
+    font-size: 0.85rem;
+}
+
+/* =============================================
+   SEÇÃO DEPOIMENTOS - CARROSSEL MANUAL
+   ============================================= */
+.depoimentos {
+    background: var(--verde-claro);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .depoimentos {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .depoimentos {
+        padding: 100px 0;
+    }
+}
+
+.depoimentos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.depoimentos-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 0;
+}
+
+.depoimento-card {
+    background: var(--branco);
+    padding: 1.8rem;
+    border-radius: var(--borda-arredondada);
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    flex: 0 0 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: var(--transicao-padrao);
+}
+
+@media (min-width: 768px) {
+    .depoimento-card {
+        padding: 2.5rem 2rem;
+        min-height: 220px;
+    }
+}
+
+.depoimento-card:hover {
+    box-shadow: var(--sombra-media);
+}
+
+.estrelas {
+    color: var(--laranja-claro);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .estrelas {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.depoimento-texto {
+    font-style: italic;
+    color: var(--cinza-texto);
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .depoimento-texto {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.depoimento-autor {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+@media (min-width: 768px) {
+    .depoimento-autor {
+        font-size: 1.15rem;
+    }
+}
+
+.depoimento-autor-1 { color: var(--azul-petroleo); }
+.depoimento-autor-2 { color: var(--laranja-claro); }
+.depoimento-autor-3 { color: var(--marrom-terroso); }
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .carousel-controls {
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+}
+
+.carousel-btn {
+    background: var(--azul-petroleo);
+    color: var(--branco);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: var(--transicao-padrao);
+    box-shadow: 0 4px 12px rgba(9,118,133,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .carousel-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+.carousel-btn:hover {
+    background: #07655f;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(9,118,133,0.4);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.dots {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--cinza-texto);
+    cursor: pointer;
+    transition: var(--transicao-padrao);
+    border: none;
+    opacity: 0.5;
+}
+
+.dot.active {
+    background: var(--azul-petroleo);
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.dot:hover {
+    opacity: 0.8;
+}
+
+/* =============================================
+   SEÇÃO FALE CONOSCO
+   ============================================= */
+.contato {
+    background: var(--branco);
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .contato {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contato {
+        padding: 100px 0;
+    }
+}
+
+.contato-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .contato-grid {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contato-grid {
+        gap: 4rem;
+    }
+}
+
+.contato-form {
+    flex: 1;
+}
+
+.contato-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-image .img-placeholder {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    border-radius: var(--borda-arredondada-grande);
+}
+
+@media (min-width: 768px) {
+    .contato-image .img-placeholder {
+        height: 450px;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--preto-suave);
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .form-group label {
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e8e8e8;
+    border-radius: 0.8rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: var(--transicao-padrao);
+    background: var(--branco);
+}
+
+@media (min-width: 768px) {
+    .form-group input,
+    .form-group textarea {
+        padding: 1.1rem;
+        font-size: 1rem;
+        border-radius: var(--borda-arredondada);
+    }
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--azul-petroleo);
+    box-shadow: 0 0 0 3px rgba(9,118,133,0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    background: var(--azul-petroleo);
+    color: var(--branco);
+    padding: 1.1rem 2rem;
+    border: none;
+    border-radius: var(--borda-arredondada-grande);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transicao-padrao);
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 20px rgba(9,118,133,0.3);
+}
+
+@media (min-width: 768px) {
+    .btn-enviar {
+        padding: 1.3rem 2.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+.btn-enviar:hover {
+    background: #07655f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(9,118,133,0.4);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--azul-petroleo);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    background: var(--bege-claro);
+    border-radius: 0.8rem;
+    transition: var(--transicao-padrao);
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .whatsapp-link {
+        font-size: 1.05rem;
+        padding: 1rem 1.5rem;
+        border-radius: var(--borda-arredondada);
+    }
+}
+
+.whatsapp-link:hover {
+    background: var(--laranja-claro);
+    color: var(--branco);
+    transform: translateX(5px);
+}
+
+/* =============================================
+   RODAPÉ
+   ============================================= */
+.footer {
+    background: var(--laranja-claro);
+    color: var(--branco);
+    padding: 3rem 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-logo .img-placeholder {
+    width: 160px;
+    height: 60px;
+    min-height: auto;
+    border: 2px dashed rgba(255,255,255,0.5);
+    color: var(--branco);
+    background: rgba(255,255,255,0.15);
+}
+
+@media (min-width: 768px) {
+    .footer-logo .img-placeholder {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+.footer-col h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .footer-col h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.footer-col p,
+.footer-col a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    line-height: 1.7;
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    transition: var(--transicao-padrao);
+}
+
+@media (min-width: 768px) {
+    .footer-col p,
+    .footer-col a {
+        font-size: 0.95rem;
+    }
+}
+
+.footer-col a:hover {
+    color: var(--branco);
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    font-size: 1.6rem;
+    transition: var(--transicao-padrao);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    background: rgba(255,255,255,0.3);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    color: rgba(39, 33, 33, 0.8);
+    font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+    .copyright {
+        font-size: 0.9rem;
+        padding-top: 2rem;
+    }
+}
+
+/* =============================================
+   RESPONSIVIDADE ADICIONAL
+   ============================================= */
+@media (max-width: 359px) {
+    .equipe-card {
+        min-width: 240px;
+        padding: 1.5rem 1rem;
     }
     
-    // Fecha o menu ao clicar em um link
-    navLinkItems.forEach(function(link) {
-        link.addEventListener('click', function() {
-            navLinks.classList.remove('mobile-active');
-            if (hamburger) {
-                hamburger.classList.remove('active');
-            }
-            document.body.style.overflow = '';
-        });
-    });
-    
-    // Fecha o menu ao clicar fora dele
-    document.addEventListener('click', function(event) {
-        const isClickInsideNav = navLinks.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-        
-        if (!isClickInsideNav && !isClickOnHamburger && navLinks.classList.contains('mobile-active')) {
-            navLinks.classList.remove('mobile-active');
-            if (hamburger) {
-                hamburger.classList.remove('active');
-            }
-            document.body.style.overflow = '';
-        }
-    });
-    
-    // Fecha o menu ao redimensionar para desktop
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 1024) {
-            navLinks.classList.remove('mobile-active');
-            if (hamburger) {
-                hamburger.classList.remove('active');
-            }
-            document.body.style.overflow = '';
-        }
-    });
-});
-
-
-// =============================================
-// SOMBRA NO HEADER AO SCROLL
-// =============================================
-window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    if (header) {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+    .hero-img {
+        width: 40%;
     }
-});
-
-// Fecha menu ao redimensionar
-window.addEventListener('resize', function() {
-    if (window.innerWidth >= 1024) {
-        navLinks.classList.remove('mobile-active');
-        hamburger.classList.remove('active');
-        document.body.style.overflow = '';
-        // Garante que o transform esteja correto em desktop
-        navLinks.style.transform = '';
+    
+    .sala-card {
+        height: 220px;
     }
-});
+    
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
 
-    </script>
-</body>
-</html>
+@media (min-width: 360px) and (max-width: 599px) {
+    .cards-grid,
+    .salas-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .terapias-grid {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .cards-grid {
+        gap: 2.5rem;
+    }
+    
+    .salas-grid {
+        gap: 2.5rem;
+    }
+    
+    .terapias-grid {
+        gap: 2rem;
+    }
+}
