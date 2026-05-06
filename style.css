@@ -215,18 +215,24 @@ img {
 .cta-nav {
     background: var(--laranja-claro);
     color: var(--branco) !important;
-    padding: 0.7rem 1.8rem;
+    padding: 1rem 2.5rem;
     border-radius: var(--borda-arredondada-grande);
-    text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
     transition: var(--transicao-padrao);
     white-space: nowrap;
-    display: block;
+  
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    transition: var(--transicao-padrao);
+    box-shadow: 0 6px 20px rgba(9,118,133,0.3);
     text-align: center;
-
-
+    width: 100%;
 }
+
+
+
 
 .cta-nav:hover {
     background: #d6793a;
@@ -240,6 +246,8 @@ img {
         font-size: 1rem;
         margin-left: 80rem;
         display: inline-block;
+        width: auto;
+        box-shadow: none;
 
     }
 }
