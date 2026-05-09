@@ -1,0 +1,94 @@
+# 🏥 Clínica Fono Habilidades Multiterapias
+
+![Status](https://img.shields.io/badge/status-finalizado-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Responsivo](https://img.shields.io/badge/design-responsivo-blue)
+
+Landing page moderna e responsiva desenvolvida para a Clínica Fono Habilidades Multiterapias, localizada em Macapá - AP.
+
+## 📋 Sobre o Projeto
+
+Site institucional completo para uma clínica multidisciplinar que atende crianças, adolescentes e adultos, oferecendo serviços de:
+
+- 🗣️ Fonoaudiologia
+- 🧠 Psicologia
+- 🧩 Terapia Ocupacional
+- 🤸 Psicomotricidade
+- 💪 Fisioterapia
+- 📋 Neuropsicologia
+- 📚 Psicopedagogia
+
+## ✨ Funcionalidades
+
+- Design totalmente responsivo (mobile-first)
+- Menu de navegação fixo com scroll suave
+- Menu hamburger funcional para dispositivos móveis
+- Carrossel automático da equipe
+- Carrossel manual de depoimentos com controles
+- Galeria de fotos das salas da clínica
+- Formulário de contato completo
+- Integração com WhatsApp
+- Link para Google Maps
+- Seção de metodologias com cards coloridos
+- Paleta de cores personalizada e acolhedora
+
+## 🎨 Paleta de Cores
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Branco | `#FFFFFF` | Fundos principais |
+| Bege Claro | `#f9f3eb` | Fundo de seções |
+| Marrom | `#9d4a17` | Títulos |
+| Bege Areia | `#d6b38d` | Cards e bordas |
+| Marrom Suave | `#ba8664` | Detalhes |
+| Azul Petróleo | `#097685` | Botões e links |
+| Laranja | `#e88d4a` | Destaques |
+| Verde Claro | `#eaf4ed` | Fundo depoimentos |
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** - Estrutura semântica
+- **CSS3** - Flexbox, Grid, Variáveis CSS, Animações
+- **JavaScript Vanilla** - Interatividade e carrosséis
+- **Google Fonts** - Tipografia profissional
+- **Design Responsivo** - Mobile, Tablet e Desktop
+- **SEO Básico** - Meta tags otimizadas
+
+## 📱 Responsividade
+
+O site se adapta perfeitamente a todos os dispositivos:
+- 📱 Smartphones (320px+)
+- 📱 Tablets (768px+)
+- 💻 Desktop (1024px+)
+- 🖥️ Telas grandes (1440px+)
+
+## 🚀 Como Executar
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/KevLps/clinica-fono-habilidades.git
+
+2. Abra o arquivo index.html no navegador
+
+Ou acesse diretamente pelo GitHub Pages: https://KevLps.github.io/clinica-fono-habilidades
+
+📞 Contato
+Clínica Fono Habilidades Multiterapias
+
+📍 Avenida Dr. Acelino de Leão, Nº 738 - Trem, Macapá, AP
+
+📱 WhatsApp: (96) 98145-5949
+
+📷 Instagram: @fonohabilidadesmcp
+
+🕐 Seg-Sex: 8h às 20h | Sáb: 8h às 12h
+
+👨‍💻 Desenvolvedor
+Desenvolvido por @kev_lpss
+
+https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white
+https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white
+
+© 2026 Clínica Fono Habilidades Multiterapias. Todos os direitos reservados.
